@@ -45,7 +45,7 @@ function CityDetailBg() {
 }
 
 function CityDetail({ city }: { city: string }) {
-  const { data, isLoading, error } = useGetWeatherByCityQuery(city);
+  const { data, isFetching, error } = useGetWeatherByCityQuery(city);
   const { data: hourlyData } = useGetHourlyByCityQuery(city);
   const iconUrl = data?.weather?.[0]?.icon
     ? `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`
@@ -127,7 +127,7 @@ function CityDetail({ city }: { city: string }) {
               />
             )}
           </div>
-          {isLoading ? (
+          {isFetching ? (
             <Typography>Loading...</Typography>
           ) : error ? (
             <Typography color="error">Error loading weather</Typography>

@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Come Back Weather App
 
-## Getting Started
+This is a modern weather dashboard built with Next.js, Redux Toolkit, Material UI, and TypeScript. The app allows you to add cities, view current weather, hourly forecasts, and beautiful backgrounds for each weather type.
 
-First, run the development server:
+### Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Add and manage your favorite cities
+- View current weather and hourly temperature chart
+- Responsive design (desktop & mobile)
+- Beautiful backgrounds for each weather condition
+- Persistent city list (localStorage)
+- Clean modular folder structure
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js
+- Redux Toolkit
+- Material UI
+- TypeScript
+- SCSS Modules
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Getting Started
 
-## Learn More
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Add your OpenWeather API key to `.env` as `NEXT_PUBLIC_OPENWEATHER_API_KEY`
+4. Run the app: `npm run dev`
 
-To learn more about Next.js, take a look at the following resources:
+### Folder Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `src/app` — main pages and layout
+- `src/components` — reusable UI components
+- `src/modules/weather` — weather logic and UI
+- `src/store` — Redux store setup
+- `src/styles` — global styles

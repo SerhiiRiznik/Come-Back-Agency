@@ -1,0 +1,40 @@
+.header-appbar {
+
+	--AppBar-background: transparent !important;
+	background-color: transparent !important;
+	background-image: none !important;
+	background: #f7faff;
+	background: linear-gradient(120deg, #f7faff 60%, #e3f0ff 100%);
+	background: rgba(255, 255, 255, 0.35);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+	border-bottom: 1.5px solid rgba(30, 144, 255, 0.18);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.header-toolbar {
+	display: flex;
+	justify-content: space-between;
+	min-height: 64px;
+}
+
+.header-btn {
+	font-weight: 800;
+	font-size: 24px;
+	text-transform: none;
+	color: #1976d2;
+	border-radius: 12px;
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-top: 9.6px;
+	padding-bottom: 9.6px;
+	letter-spacing: 1.5px;
+
+}
+
+.header-icon {
+	font-size: 32px !important;
+	color: #1976d2;
+}

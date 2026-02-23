@@ -7,9 +7,13 @@ export type UseGetWeatherByCityQueryResult = {
   refetch: () => void;
 };
 
+type LazyTrigger<T> = (
+  arg: string,
+) => Promise<{ data: T }> & { unwrap: () => Promise<T> };
+
 export type UseLazyGetWeatherByCityQueryResult = [
-  () => void,
-  { data: HourlyWeatherData | null },
+  LazyTrigger<WeatherData>,
+  { data: WeatherData | null; isFetching: boolean; error: unknown | null },
 ];
 
 export type UseGetHourlyByCityQueryResult = {

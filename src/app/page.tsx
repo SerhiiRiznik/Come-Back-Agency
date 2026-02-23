@@ -34,7 +34,7 @@ function HomeContent() {
       setError("");
       try {
         const result = await trigger(cityInput.trim()).unwrap();
-        if (result && result.name) {
+        if (result?.name) {
           dispatch(addCity({ name: cityInput.trim() }));
           setCityInput("");
         }
